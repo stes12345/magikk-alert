@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Geo\GeoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,5 +37,10 @@ Route::middleware(['auth'])->group(function () {
 
     // Route to handle the profile request
     Route::post('/profile', [LoginController::class, 'login']);
+
+    Route::resource('/geo-fence', GeoController::class);
+
+    // Route
+    Route::post('/geo-status-change/{item}', [GeoController::class, 'updateStatus'])->name('geo-fence.updateStatus');
 
 });

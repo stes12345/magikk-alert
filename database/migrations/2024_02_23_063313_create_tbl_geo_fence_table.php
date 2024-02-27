@@ -18,8 +18,11 @@ return new class extends Migration
             $table->string('area_name');
             $table->integer('created_by');
             $table->integer('company_id')->nullable();
-            $table->geometry('geom');
+            $table->geometry('geom')->nullable();
+            $table->decimal('geom_area', 10, 2)->nullable();
+            $table->enum('status', [0, 1])->default(1)->comment('0->Inactive,1->Active');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

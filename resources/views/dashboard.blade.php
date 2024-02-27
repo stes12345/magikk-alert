@@ -25,14 +25,14 @@
     			<div class="d-flex">
     				<div class="collapse navbar-collapse" id="headerNavbar">
         				<ul class="navbar-nav align-items-center">
-					        <li class="nav-item nav-home" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Home"><a class="nav-link" href="#"><i data-feather="home" class="icon"></i></a></li>
+					        <li class="nav-item nav-home" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Home"><a class="nav-link" href="{{route('dashboard')}}"><i data-feather="home" class="icon"></i></a></li>
 					        <li class="nav-item nav-alerts" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Alerts">
 					        	<a class="nav-link" href="#">
 					        		<i data-feather="bell" class="icon"></i>
 					        		<span class="pulse">10</span>
 					        	</a>
 					        </li>
-					        <li class="nav-item nav-reports" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Reports"><a class="nav-link" href="#"><i data-feather="file" class="icon"></i></a></li>
+					        <li class="nav-item nav-reports" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Reports"><a class="nav-link" href="{{route('geo-fence.index')}}"><i data-feather="file" class="icon"></i></a></li>
 					        <li class="nav-item nav-settings" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Settings"><a class="nav-link" href="#"><i data-feather="settings" class="icon"></i></a></li>
 					        <li class="nav-item nav-user dropdown no-arrow">
 					        	<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="rounded-circle" src="assets/images/user-avatar.png" alt="User" width="35" height="35" /></a>
